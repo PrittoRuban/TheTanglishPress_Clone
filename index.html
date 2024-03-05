@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Tanglish Press</title>
+    <link icon="icon" href="./asserts/logozoomedout-emLhyYc4.png" rel="icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        background-color: black;
+        color: #fff;
+      }
+      .bg-primary {
+        background-color: red;
+        animation: travel 1s ease-in-out;
+      }
+
+      .hover\:bg-primary:hover {
+        background-color: pink;
+      }
+
+      header {
+        background-color: red;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+
+      @keyframes travel {
+        0% {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translateX(-10px);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes fadeOverText {
+        0% {
+          color: #fff;
+        }
+        25% {
+          color: lightblue;
+        }
+        50% {
+          opacity: 0.5;
+          color: violet;
+        }
+        75% {
+          color: lightgreen;
+        }
+        100% {
+          opacity: 1;
+          color: pink;
+        }
+      }
+
+      .head {
+        animation: fadeOverText 10s ease-in-out infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>The Tanglish Press - Clone</h1>
+      <h2>For Educational Purposes Only</h2>
+    </header>
+
+    <main
+      class="container mx-auto px-6 pt-16 flex-1 text-center"
+      style="opacity: 1; transform: none"
+    >
+      <div
+        class="flex justify-center items-center"
+        style="opacity: 1; transform: none"
+      >
+        <img
+          src="./asserts/logozoomedout-emLhyYc4.png"
+          width="200"
+          height="200"
+          class="mx-auto my-auto"
+          alt="thetanglishpress"
+          style="padding: 20px"
+        />
+      </div>
+      <h2 class="text-3xl md:text-4xl lg:text-6xl uppercase">Welcome to</h2>
+      <h1
+        class="text-5xl md:text-6xl lg:text-8xl uppercase font-black mb-8 head"
+        id="tanglish"
+      >
+        The Tanglish Press
+      </h1>
+      <p class="text-base md:text-lg lg:text-2xl mb-8">
+        Are you a Student ?<br />Do you like Technology ?<br />Appo What are you
+        waiting for,<br />
+        Subscribe! its FREE !
+      </p>
+      <form
+        id="revue-form"
+        name="revue-form"
+        target="_blank"
+        style="opacity: 1; transform: none"
+      >
+        <div class="flex flex-col md:flex-row justify-center mb-4">
+          <input
+            placeholder="Email ID Pleach"
+            type="email"
+            name="member[email]"
+            id="member_email"
+            class="text-2xl border-2 sm:border--2 sm:border-r-2 border-white placeholder:text-gray-400 placeholder:italic py-4 px-6 md:px-10 lg:py-6 lg:px-12 bg-white bg-opacity-10 focus:bg-opacity-20 duration-150 md:rounded-tr-none md:rounded-br-none rounded-full outline-none mb-4 md:mb-0"
+            value=""
+          /><input
+            type="submit"
+            name="member[subscribe]"
+            id="member_submit"
+            class="bg-primary border-2 sm:border-r-2 sm:border-l-0 border-white md:rounded-tl-none md:rounded-bl-none rounded-full text-2xl py-4 px-6 md:px-10 lg:py-6 lg:px-12 font-bold uppercase cursor-pointer hover:opacity-75 duration-150"
+            value="Ippa Subscribe"
+          />
+          <div
+            style="
+              position: fixed;
+              z-index: 9999;
+              inset: 16px;
+              pointer-events: none;
+            "
+          ></div>
+        </div>
+      </form>
+    </main>
+
+    <div
+      class="px-8 flex flex-col justify-center items-center text-white"
+      id="past-issues"
+    >
+      <div class="mt-8 mx-auto text-center">
+        <h1 class="text-5xl font-bold" style="opacity: 1; transform: none">
+          Previous News Letters
+        </h1>
+      </div>
+      <div
+        class="grid md:grid-cols-3 sm:grid-cols-2 sm:gap-4 mb-8 mt-12 md:gap-12 mx-auto"
+      >
+        <div
+          class="max-w-sm bg-white border border-gray-200 mt-8 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          style="opacity: 1; transform: none"
+        >
+          <a href="#"
+            ><img
+              class="rounded-t-lg"
+              src="https://mcusercontent.com/81b710a422b706d57538bff4e/images/54ec7ab6-c1ea-f6b9-b9f6-4eb3379d9cc3.png"
+              alt="Mudhal Vanakkam"
+              style="opacity: 1"
+          /></a>
+          <div class="p-5">
+            <a href="#"
+              ><h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                style="opacity: 1"
+              >
+                Mudhal Vanakkam
+              </h5></a
+            >
+            <p
+              class="mb-3 font-normal text-gray-700 dark:text-gray-400"
+              style="opacity: 1"
+            >
+              You will see How the CEO of OpenAI was kicked out from OpenAI,
+              Sing a Romantic “Naa Ready” song from Leo and then understand how
+              Elon Musk plans to kill ChatGPT
+            </p>
+            <a
+              href="https://mailchi.mp/ea8ffb495b49/hello-prands-vanakkam-welcome-to-the-tanglish-press?e=c4a2dd4b0d"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-800 rounded-lg hover:bg-black focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              ><span style="transform: none">Padiklaama</span
+              ><svg
+                class="w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+                style="transform: none"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                ></path></svg
+            ></a>
+          </div>
+        </div>
+        <div
+          class="max-w-sm bg-white border border-gray-200 mt-8 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          style="opacity: 1; transform: none"
+        >
+          <a href="#"
+            ><img
+              class="rounded-t-lg"
+              src="https://mcusercontent.com/81b710a422b706d57538bff4e/images/fff784b4-60b8-73b2-8992-740ae02e6169.jpeg"
+              alt="Ennada Panni Vachirukeenga"
+              style="opacity: 1"
+          /></a>
+          <div class="p-5">
+            <a href="#"
+              ><h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                style="opacity: 1"
+              >
+                Ennada Panni Vachirukeenga
+              </h5></a
+            >
+            <p
+              class="mb-3 font-normal text-gray-700 dark:text-gray-400"
+              style="opacity: 1"
+            >
+              You will get to know How to access 200+ AI tools for free 🤯 ,
+              make your own Disney movie with just text 🦄 and Start a Startup
+              with just a jpeg 🌌 and finally How AI just found millions of Gems
+              💎
+            </p>
+            <a
+              href="https://us21.campaign-archive.com/?u=81b710a422b706d57538bff4e&amp;id=6bbdbcc571"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-800 rounded-lg hover:bg-black focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              ><span style="transform: none">Padiklaama</span
+              ><svg
+                class="w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+                style="transform: none"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                ></path></svg
+            ></a>
+          </div>
+        </div>
+        <div
+          class="max-w-sm bg-white border border-gray-200 mt-8 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          style="opacity: 1; transform: none"
+        >
+          <a href="#"
+            ><img
+              class="rounded-t-lg"
+              src="https://mcusercontent.com/81b710a422b706d57538bff4e/images/5ef701c9-8923-ea05-9cfc-bc25fa606653.jpg"
+              alt="Enna ma ippadi Panreengalae ma 🙈"
+              style="opacity: 1"
+          /></a>
+          <div class="p-5">
+            <a href="#"
+              ><h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                style="opacity: 1"
+              >
+                Enna ma ippadi Panreengalae ma 🙈
+              </h5></a
+            >
+            <p
+              class="mb-3 font-normal text-gray-700 dark:text-gray-400"
+              style="opacity: 1"
+            >
+              You will get to know How Google Faked their Gemini AI 😱 Microsoft
+              and Siemens to introduce Siemens Copilot 🤖 Ennadhu ChatGPT maari
+              Video GPT ah 🤯 AI used in Israel Wars 😔
+            </p>
+            <a
+              href="https://mailchi.mp/ee508252a32f/second-12669913"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-800 rounded-lg hover:bg-black focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              ><span style="transform: none">Padiklaama</span
+              ><svg
+                class="w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+                style="transform: none"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                ></path></svg
+            ></a>
+          </div>
+        </div>
+        <div
+          class="max-w-sm bg-white border border-gray-200 mt-8 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          style="opacity: 1; transform: none"
+        >
+          <a href="#"
+            ><img
+              class="rounded-t-lg"
+              src="https://mcusercontent.com/81b710a422b706d57538bff4e/images/ee511706-c702-9f85-7066-e84b0d722f40.jpeg"
+              alt="AI pudichu irundha, onaku lifetime settlement of news da 😉"
+              style="opacity: 1"
+          /></a>
+          <div class="p-5">
+            <a href="#"
+              ><h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                style="opacity: 1"
+              >
+                AI pudichu irundha, onaku lifetime settlement of news da 😉
+              </h5></a
+            >
+            <p
+              class="mb-3 font-normal text-gray-700 dark:text-gray-400"
+              style="opacity: 1"
+            >
+              Indha Varathula, you are going to know abt 🥶 Colddd Emails (its
+              so chil, that I froze and misspelled chill) 🦾 Tesla bot which is
+              going to be your best friend of the future. 🧑‍🎨 Why you are going
+              to wave Goodbye to your UI/UX career 👻 Get Nightmares from Emojis
+            </p>
+            <a
+              href="https://mailchi.mp/3b0fc5abd105/second-12671462"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-800 rounded-lg hover:bg-black focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              ><span style="transform: none">Padiklaama</span
+              ><svg
+                class="w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+                style="transform: none"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                ></path></svg
+            ></a>
+          </div>
+        </div>
+        <div
+          class="max-w-sm bg-white border border-gray-200 mt-8 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          style="opacity: 1; transform: none"
+        >
+          <a href="#"
+            ><img
+              class="rounded-t-lg"
+              src="https://mcusercontent.com/81b710a422b706d57538bff4e/images/2b28d1b8-e7ff-9ae0-a6ae-0437b67b9e9d.jpeg"
+              alt="Ho Ho Ho Santa brings you The Tanglish Press 🎄🎅🏻"
+              style="opacity: 1"
+          /></a>
+          <div class="p-5">
+            <a href="#"
+              ><h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                style="opacity: 1"
+              >
+                Ho Ho Ho Santa brings you The Tanglish Press 🎄🎅🏻
+              </h5></a
+            >
+            <p
+              class="mb-3 font-normal text-gray-700 dark:text-gray-400"
+              style="opacity: 1"
+            >
+              So indha varathula, Indian AI vs American AI 😬 📱 And… The Most
+              Deleted App of the year award goes to…. Your Data My Data all said
+              taata 👋
+            </p>
+            <a
+              href="https://mailchi.mp/c52a112181d9/second-12673556"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-800 rounded-lg hover:bg-black focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              ><span style="transform: none">Padiklaama</span
+              ><svg
+                class="w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+                style="transform: none"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                ></path></svg
+            ></a>
+          </div>
+        </div>
+        <div
+          class="max-w-sm bg-white border border-gray-200 mt-8 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          style="opacity: 1; transform: none"
+        >
+          <a href="#"
+            ><img
+              class="rounded-t-lg"
+              src="https://mcusercontent.com/81b710a422b706d57538bff4e/images/783bd33e-0af0-96d2-9841-c19ea0111499.jpeg"
+              alt="Happy Puthaandhu Prands 🥳"
+              style="opacity: 1"
+          /></a>
+          <div class="p-5">
+            <a href="#"
+              ><h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                style="opacity: 1"
+              >
+                Happy Puthaandhu Prands 🥳
+              </h5></a
+            >
+            <p
+              class="mb-3 font-normal text-gray-700 dark:text-gray-400"
+              style="opacity: 1"
+            >
+              indha puthaandula… Karupu Otaiya padika Sarrunu oru Rocket 🤨
+              Guluguluvum (Google) AI videovum 🧐 ABCD (AI P(B)odum Chinnadha
+              Dance) 💃
+            </p>
+            <a
+              href="https://mailchi.mp/b3a372f14232/second-12674727"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-800 rounded-lg hover:bg-black focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              ><span style="transform: none">Padiklaama</span
+              ><svg
+                class="w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+                style="transform: none"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                ></path></svg
+            ></a>
+          </div>
+        </div>
+        <div
+          class="max-w-sm bg-white border border-gray-200 mt-8 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          style="opacity: 1; transform: none"
+        >
+          <a href="#"
+            ><img
+              class="rounded-t-lg"
+              src="https://mcusercontent.com/81b710a422b706d57538bff4e/images/64f11ddd-0563-b490-e64b-50f8d51fe596.jpeg"
+              alt="AI AI AI Idk AI, I avoid, 
+        But AI knows me, I cant avoid 😐"
+              style="opacity: 1"
+          /></a>
+          <div class="p-5">
+            <a href="#"
+              ><h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                style="opacity: 1"
+              >
+                AI AI AI Idk AI, I avoid, But AI knows me, I cant avoid 😐
+              </h5></a
+            >
+            <p
+              class="mb-3 font-normal text-gray-700 dark:text-gray-400"
+              style="opacity: 1"
+            >
+              Indha Varathula AI enna enna senjuruku nu paakanuma ?
+            </p>
+            <a
+              href="https://mailchi.mp/91cff199d663/second-12676483"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-800 rounded-lg hover:bg-black focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              ><span style="transform: none">Padiklaama</span
+              ><svg
+                class="w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+                style="transform: none"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                ></path></svg
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>
